@@ -1,0 +1,196 @@
+<html>
+<head>
+<title> Fashion Icon </title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="brands.css">
+</head>
+<body>
+<nav>
+	<img src="ficon.png" style="width:120;position:relative;top:50;right:20;"/>
+  <ul id="main">
+	<li>Offers
+	  <ul class="drop">
+        <div>
+        <li>Buy 1 get 5</li>
+        <li>Minimum 10% off</li>
+        <li>Minimum 30% off</li>
+		<li>Minimum 50% off</li>
+		<li>Minimum 70% off</li>
+		<li>Minimum 95% off</li>
+        </div>
+      </ul>
+	</li>
+    <li>Men
+	  <ul class="drop">
+        <div>
+        <li>t-shirts</li>
+        <li>Shirts</li>
+        <li>Jeans</li>
+		<li>Trousers</li>
+		<li>Jackets</li>
+		<li>Suits and Blazers</li>
+		<li>Beachwear and Swimwear</li>
+        </div>
+      </ul>
+	</li>
+    <li>Women
+	  <ul class="drop">
+        <div>
+        <li>Tops</li>
+        <li>Shirts</li>
+        <li>Jeans</li>
+		<li>Dresses</li>
+		<li>Jackets</li>
+		<li>Shrugs</li>
+		<li>Beachwear and Swimwear</li>
+        </div>
+      </ul>
+	</li>
+    <li>Brands
+      <ul class="drop">
+        <div>
+        <li>Puma</li>
+        <li>Adidas</li>
+        <li>Nike</li>
+		<li>Vans</li>
+		<li>Converse</li>
+		<li>Armani</li>
+		<li>Versace</li>
+        </div>
+      </ul>
+    </li>
+	<li>Boys
+	  <ul class="drop">
+        <div>
+        <li>t-shirts</li>
+        <li>Shirts</li>
+        <li>Jeans</li>
+		<li>Trousers</li>
+		<li>Jackets</li>
+		<li>Suits and Blazers</li>
+		<li>Beachwear and Swimwear</li>
+        </div>
+      </ul>
+	</li>
+	<li>Girls
+	  <ul class="drop">
+        <div>
+        <li>Tops</li>
+        <li>Shirts</li>
+        <li>Jeans</li>
+		<li>Dresses</li>
+		<li>Jackets</li>
+		<li>Shrugs</li>
+		<li>Beachwear and Swimwear</li>
+        </div>
+      </ul>
+	</li>
+    <li>Contact</li>
+	<li>
+	<div class="topnav">
+		<input type="text" placeholder="Try shirts,jeans,brands,etc.">
+		<div id="button-holder">
+		<img src='searchicon.png' />
+		</div>
+	</div>
+	</li>
+	<li style="min-width:0px;">
+	<div class="topnav">
+	<div class="image-holder">
+		<img src='cart.png' />
+	</div>
+	</div>
+	</li>
+	<li style="min-width:0px;">
+	<div class="topnav">
+	<div class="image-holder">
+		<img src='wishlist.jpg' />
+	</div>
+	</div>
+	</li>
+	<li style="min-width:0px;padding-right:40px;">
+	<div class="topnav">
+	<div class="image-holder">
+		<img src='profile.png' />
+	</div>
+	</div>
+	</li>
+    <div id="marker"></div>
+  </ul>
+</nav>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="off1.jpg" style="width:650px;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="off2.jpg" style="width:650px;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="off3.png" style="width:650px;">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center" class="dotdiv">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<!--hot brands-->
+<div class="brands">
+	<h1 style="font-family:garamond;"> &nbsp;&nbsp;&nbsp;Top Brands </h1>
+  <ul>
+    <li class="brandopt">
+      <img src="nike.png" />
+      <h3>Nike</h3>
+    </li>
+      
+    <li class="brandopt">
+      <img src="adidas.jpg" />
+      <h3>Adidas</h3>
+    </li>
+ 
+    <li class="brandopt">
+      <img src="reebok.png" />
+      <h3>Reebok</h3>
+    </li>
+ 
+    <li class="brandopt">
+      <img src="versace.jpg" />
+      <h3>Versace</h3>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

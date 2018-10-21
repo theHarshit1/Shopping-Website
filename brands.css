@@ -1,0 +1,23 @@
+.brands {
+	position:absolute;
+	width:300px;
+	right:100px;
+	top:200px;
+}
+ 
+.brands ul {
+  list-style-type: none;
+}
+ 
+.brandopt h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.brandopt img {
+  width:250px;
+}
+ 
+li.brandopt:hover {
+  background: #eee;
+  cursor: pointer;
+}
